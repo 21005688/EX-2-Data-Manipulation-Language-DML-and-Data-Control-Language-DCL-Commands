@@ -133,6 +133,7 @@ select * from managers where hiredate < '30 SEP 81';
 
 
 ### OUTPUT:
+![A1000](https://github.com/21005688/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/94747031/814ce5ea-9e34-4053-a9d0-ef6d25036d8f)
 
 
 ### Q11)	List ename, deptno and sal after sorting emp table in ascending order by deptno and then descending order by sal.
@@ -143,6 +144,7 @@ select ename,deptno,salary from managers ORDER BY deptno ASC,salary desc;
 
 
 ### OUTPUT:
+![A1111](https://github.com/21005688/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/94747031/968af9ba-e9af-49c0-b7f3-8d1980387462)
 
 
 ### Q12) List the names of employees not belonging to dept no 30,40 & 10
@@ -153,6 +155,7 @@ select ename from managers where deptno NOT IN (30,40,10);
 
 
 ### OUTPUT:
+![A12222](https://github.com/21005688/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/94747031/3ef68386-77c8-4cf8-83f6-7be193b4b45d)
 
 ### Q13) Find number of rows in the table EMP
 
@@ -162,6 +165,7 @@ select count(*) as rownumber from managers;
 
 ### OUTPUT:
 
+![A1333](https://github.com/21005688/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/94747031/43332975-f482-4851-99b1-dcde47fa110f)
 
 ### Q14) Find maximum, minimum and average salary in EMP table.
 
@@ -170,6 +174,7 @@ select MAX(salary) as maximumsal,MIN(salary) as minimumsal,AVG(salary)
 as averagesal from managers;
 
 ### OUTPUT:
+![A14444](https://github.com/21005688/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/94747031/ebdfe976-9c94-480e-918f-effba9863346)
 
 
 ### Q15) List the jobs and number of employees in each job. The result should be in the descending order of the number of employees.
@@ -178,3 +183,10 @@ as averagesal from managers;
 select designation,count(*) as number_employee from managers GROUP BY designation ORDER BY number_employee DESC;
 
 ### OUTPUT:
+![A1555](https://github.com/21005688/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/94747031/f15d449f-4595-4a5c-8d0a-03c93decfe73)
+
+
+
+
+### RESULT:
+Executing DML queries using SQL was executed successfully.
