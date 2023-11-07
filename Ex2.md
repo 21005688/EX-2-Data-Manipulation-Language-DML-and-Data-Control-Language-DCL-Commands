@@ -1,7 +1,7 @@
 # EX 2 Data Manipulation Language (DML) Commands and built in functions in SQL
+## DATE:11:8:23
 ## AIM:
 To create a manager database and execute DML queries using SQL.
-
 
 ## DML(Data Manipulation Language)
 <div align="justify">
@@ -44,16 +44,10 @@ update manager set salary=salary+(salary*0.10);
 ### QUERY:
 delete managers where salary<2750;
 
-
-
 ### OUTPUT:
 ![A2](https://github.com/21005688/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/94747031/388134d4-ee67-4c25-b3df-bc2e7232fdd4)
 
-
-
-
 ### Q3) Display each name of the employee as “Name” and annual salary as “Annual Salary” (Note: Salary in emp table is the monthly salary)
-
 
 ### QUERY:
 SELECT
@@ -66,11 +60,7 @@ managers;
 ### OUTPUT:
 ![A3](https://github.com/21005688/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/94747031/0cb59559-487e-4a87-a0ab-f0a93ed073d4)
 
-
-
 ### Q5)	List the names of Clerks from emp table.
-
-
 
 ### QUERY:
 select ename from managers where designation='clerk';
@@ -79,21 +69,15 @@ select ename from managers where designation='clerk';
 ### OUTPUT:
 ![A4](https://github.com/21005688/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/94747031/d96e104f-fbd4-45a2-941a-75233866a4c4)
 
-
-
 ### Q6)	List the names of employee who are not Managers.
-
 
 ### QUERY:
 select ename from managers where designation!='manager';
 
-
 ### OUTPUT:
 ![A5](https://github.com/21005688/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/94747031/5275d341-67af-4955-8caa-b3dbf75e1287)
 
-
 ### Q7)	List the names of employees not eligible for commission.
-
 
 ### QUERY:
 select ename from managers where commission=0;
@@ -101,9 +85,7 @@ select ename from managers where commission=0;
 ### OUTPUT:
 ![A777](https://github.com/21005688/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/94747031/a1b4fb11-a3de-45aa-9163-79069578bbf1)
 
-
 ### Q8)	List employees whose name either start or end with ‘s’.
-
 
 ### QUERY:
 select ename from managers where ename LIKE 'S%' OR ename LIKE '%S';
@@ -112,47 +94,34 @@ select ename from managers where ename LIKE 'S%' OR ename LIKE '%S';
 
 ![A888](https://github.com/21005688/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/94747031/e9c07549-9881-409a-bbd4-c6d37abf7901)
 
-
 ### Q9) Sort emp table in ascending order by hire-date and list ename, job, deptno and hire-date.
-
 
 ### QUERY:
 select ename,designation,deptno,hiredate from managers order by hiredate ASC;
 
-
 ### OUTPUT:
 ![A999](https://github.com/21005688/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/94747031/d1e61473-9d35-4e7e-a4ae-501f0a23d7ea)
 
-
-
 ### Q10) List the Details of Employees who have joined before 30 Sept 81.
-
 
 ### QUERY:
 select * from managers where hiredate < '30 SEP 81';
 
-
 ### OUTPUT:
 ![A1000](https://github.com/21005688/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/94747031/814ce5ea-9e34-4053-a9d0-ef6d25036d8f)
 
-
 ### Q11)	List ename, deptno and sal after sorting emp table in ascending order by deptno and then descending order by sal.
-
 
 ### QUERY:
 select ename,deptno,salary from managers ORDER BY deptno ASC,salary desc;
 
-
 ### OUTPUT:
 ![A1111](https://github.com/21005688/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/94747031/968af9ba-e9af-49c0-b7f3-8d1980387462)
 
-
 ### Q12) List the names of employees not belonging to dept no 30,40 & 10
-
 
 ### QUERY:
 select ename from managers where deptno NOT IN (30,40,10);
-
 
 ### OUTPUT:
 ![A12222](https://github.com/21005688/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/94747031/3ef68386-77c8-4cf8-83f6-7be193b4b45d)
@@ -161,7 +130,6 @@ select ename from managers where deptno NOT IN (30,40,10);
 
 ### QUERY:
 select count(*) as rownumber from managers;
-
 
 ### OUTPUT:
 
@@ -184,8 +152,6 @@ select designation,count(*) as number_employee from managers GROUP BY designatio
 
 ### OUTPUT:
 ![A1555](https://github.com/21005688/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/94747031/f15d449f-4595-4a5c-8d0a-03c93decfe73)
-
-
 
 
 ### RESULT:
